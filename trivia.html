@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive BMI calculator by Fengwei Liu">
+  <title>Fengwei Liu | Trivia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><p class="eyebrow">Information Systems Engineering</p><h1>Fengwei Liu</h1><p>Computer Vision Student &amp; Creative Technologist</p></header>
+  <nav class="navbar" aria-label="Main navigation"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a class="active" href="trivia.html">Trivia</a></nav>
+  <div class="page-layout">
+    <aside class="sidebar useful-links">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <section class="page-intro"><p class="section-label">JavaScript interaction</p><h2>BMI Calculator</h2><p>Enter a height and weight to calculate Body Mass Index and see the corresponding category.</p></section>
+      <section class="calculator-card">
+        <form id="bmi-form" novalidate>
+          <div class="input-group"><label for="height">Height</label><div class="input-with-unit"><input id="height" name="height" type="number" min="80" max="250" step="0.1" placeholder="e.g. 170" required><span>cm</span></div><small id="height-error" class="error" aria-live="polite"></small></div>
+          <div class="input-group"><label for="weight">Weight</label><div class="input-with-unit"><input id="weight" name="weight" type="number" min="20" max="300" step="0.1" placeholder="e.g. 60" required><span>kg</span></div><small id="weight-error" class="error" aria-live="polite"></small></div>
+          <button type="submit">Calculate BMI</button>
+          <button type="reset" class="secondary-button">Reset</button>
+        </form>
+        <div id="bmi-result" class="result-panel" aria-live="polite">
+          <p class="result-kicker">Your result</p><strong id="bmi-value">--</strong><p id="bmi-category">Enter your information to begin.</p>
+        </div>
+        <p class="health-note">This calculator is a programming demonstration and not medical advice.</p>
+      </section>
+    </main>
+    <aside class="sidebar contact-panel">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="get">
+        <label for="name">Name</label><input id="name" name="name" type="text" minlength="2" required>
+        <label for="email">Email</label><input id="email" name="email" type="email" required>
+        <label for="message">Message</label><textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p class="form-note">Demo form for this course website.</p>
+    </aside>
+  </div>
+  <footer class="site-footer"><p>Created July 2026 by Fengwei Liu</p><a href="https://github.com/LIU-Fengwei" target="_blank" rel="noopener noreferrer">GitHub Profile</a></footer>
+</body>
+</html>
